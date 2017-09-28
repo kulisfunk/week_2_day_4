@@ -8,9 +8,18 @@ class Person
     @name = name
     @surname = surname
   end
-  #
-  # def log_in()
-  #   return "logged in"
-  # end
+
+  def first_name()
+    return @name
+  end
+
+  def last_name()
+    return @surname
+  end
+
+
+  def talk()
+    return "#{name} #{surname}"
+  end
 
 end

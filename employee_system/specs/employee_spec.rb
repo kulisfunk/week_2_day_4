@@ -11,7 +11,7 @@ class TestEmployee < MiniTest::Test
 
   def test_can_login()
     actual = @employee.log_in()
-    assert_equal("Employee logged in", actual)
+    assert_equal("logged in", actual)
   end
 
   def test_has_name()

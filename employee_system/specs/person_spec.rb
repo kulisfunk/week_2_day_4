@@ -10,11 +10,21 @@ class TestPerson < MiniTest::Test
 
   end
 
+  def test_first_name()
+    actual = @person.first_name()
+    assert_equal("Tony", actual)
+  end
 
-  def test_talk_name()
-    name = @person.name()
-    surname = @person.surname
-    actual = name + " " + surname
+  def test_last_name()
+    actual = @person.last_name()
+    assert_equal("Baloney", actual)
+
+  end
+
+
+  def test_talk()
+    # actual = @person.name() + " " + @person.surname()
+    actual = @person.talk()
     assert_equal("Tony Baloney", actual)
   end
 

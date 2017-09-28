@@ -14,4 +14,11 @@ class TestAgent < MiniTest::Test
     assert_equal("The names Bond, James Bond", actual)
   end
 
+  def test_name()
+    actual = @agent.full_name()
+    assert_equal("The names Bond, James Bond", actual)
+  end
+
+
+
 end
