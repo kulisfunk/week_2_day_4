@@ -89,7 +89,7 @@ pet_highest = pets.max {|pet| pet[:price] }
 puts pet_highest[:price]
 
 ## Find the total value (price) of all of the pets added together.
-#p pets.sum {|pets| pest[:price]}
+#p pets.sum {|pets| pets[:price]}
 total_cost = []
 pets.each {|pet| total_cost << pet[:price] }
 total = total_cost.reduce {|total, price| total + price}
